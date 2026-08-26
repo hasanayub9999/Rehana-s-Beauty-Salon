@@ -1,0 +1,1767 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rehana Hair & Beauty | West Windsor, NJ</title>
+
+  <meta
+    name="description"
+    content="Rehana Hair & Beauty — professional hair and beauty services in Princeton Junction, New Jersey."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root {
+      --pink: #f4d9df;
+      --pink-light: #fff1f4;
+      --pink-dark: #c48695;
+      --cream: #fffaf7;
+      --cream-dark: #f7efeb;
+      --brown: #382b2e;
+      --text: #33292b;
+      --muted: #76696c;
+      --border: #eadcdf;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ==============================
+       ANNOUNCEMENT
+    ============================== */
+
+    .announcement {
+      background: var(--brown);
+      color: white;
+      text-align: center;
+      padding: 9px;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+    }
+
+    /* ==============================
+       NAVIGATION
+    ============================== */
+
+    header {
+      height: 82px;
+      padding: 0 7%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background: rgba(255, 250, 247, 0.96);
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid var(--border);
+
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-circle {
+      width: 43px;
+      height: 43px;
+
+      border: 1px solid var(--pink-dark);
+      border-radius: 50%;
+
+      display: grid;
+      place-items: center;
+
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 8px;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 29px;
+    }
+
+    nav a {
+      font-size: 12px;
+      transition: 0.25s;
+    }
+
+    nav a:hover {
+      color: var(--pink-dark);
+    }
+
+    .nav-button {
+      background: var(--brown);
+      color: white;
+      padding: 13px 20px;
+    }
+
+    .menu {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .hero {
+      min-height: 720px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-content {
+      padding: 90px 10% 90px 9%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      background:
+        radial-gradient(
+          circle at 15% 20%,
+          #ffe6ec,
+          transparent 38%
+        );
+    }
+
+    .eyebrow {
+      color: var(--pink-dark);
+      font-size: 10px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+
+      font-size: clamp(55px, 6vw, 88px);
+      line-height: 1.01;
+    }
+
+    .hero h1 em {
+      color: var(--pink-dark);
+    }
+
+    .hero-description {
+      max-width: 500px;
+
+      color: var(--muted);
+
+      font-size: 15px;
+
+      margin: 28px 0;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      padding: 15px 23px;
+
+      font-size: 12px;
+      font-weight: 700;
+
+      transition: 0.25s;
+    }
+
+    .button-dark {
+      background: var(--brown);
+      color: white;
+    }
+
+    .button-dark:hover {
+      transform: translateY(-3px);
+    }
+
+    .button-link {
+      border-bottom: 1px solid var(--brown);
+    }
+
+    .hero-image {
+      background:
+        linear-gradient(
+          rgba(211, 148, 164, 0.10),
+          rgba(211, 148, 164, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1400&q=85");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* ==============================
+       INTRO
+    ============================== */
+
+    .intro {
+      padding: 120px 8%;
+      background: white;
+      text-align: center;
+    }
+
+    .intro h2 {
+      max-width: 900px;
+      margin: auto;
+
+      font-family: "Playfair Display", serif;
+      font-size: clamp(43px, 5vw, 68px);
+      font-weight: 500;
+
+      line-height: 1.08;
+    }
+
+    .intro h2 em {
+      color: var(--pink-dark);
+    }
+
+    .intro p:last-child {
+      max-width: 650px;
+      margin: 26px auto 0;
+
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ==============================
+       GENERAL SECTIONS
+    ============================== */
+
+    .section {
+      padding: 110px 8%;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      margin-bottom: 55px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+
+      font-size: clamp(45px, 5vw, 65px);
+      line-height: 1;
+    }
+
+    .section-heading > p {
+      max-width: 350px;
+
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* ==============================
+       SERVICES
+    ============================== */
+
+    .services {
+      background: var(--cream);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      border-top: 1px solid var(--border);
+    }
+
+    .service {
+      min-height: 285px;
+
+      padding: 35px 25px 35px 0;
+
+      border-right: 1px solid var(--border);
+    }
+
+    .service:not(:first-child) {
+      padding-left: 25px;
+    }
+
+    .service:last-child {
+      border-right: 0;
+    }
+
+    .service-number {
+      color: var(--pink-dark);
+      font-size: 11px;
+    }
+
+    .service h3 {
+      font-family: "Playfair Display", serif;
+
+      font-size: 27px;
+      font-weight: 500;
+
+      margin: 30px 0 12px;
+    }
+
+    .service p {
+      color: var(--muted);
+      font-size: 12px;
+
+      max-width: 230px;
+    }
+
+    /* ==============================
+       GALLERY
+    ============================== */
+
+    .gallery {
+      background: var(--brown);
+      color: white;
+    }
+
+    .gallery .eyebrow {
+      color: #e5b9c3;
+    }
+
+    .gallery-button {
+      border: 1px solid rgba(255,255,255,0.7);
+      padding: 13px 20px;
+      font-size: 11px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .gallery-item {
+      height: 370px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-item img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-label {
+      position: absolute;
+      bottom: 17px;
+      left: 17px;
+
+      background: rgba(56,43,46,0.78);
+
+      padding: 8px 12px;
+
+      font-size: 9px;
+      letter-spacing: 1.5px;
+    }
+
+    .gallery-note {
+      color: #bbaeb1;
+      font-size: 10px;
+      margin-top: 18px;
+    }
+
+    /* ==============================
+       ABOUT
+    ============================== */
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 9%;
+
+      align-items: center;
+
+      background: white;
+    }
+
+    .about-image {
+      min-height: 600px;
+
+      background:
+        url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=85")
+        center / cover;
+    }
+
+    .about-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(48px, 5vw, 68px);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .about-content h2 em {
+      color: var(--pink-dark);
+    }
+
+    .about-content p:not(.eyebrow) {
+      max-width: 510px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+
+      margin: 24px 0;
+    }
+
+    /* ==============================
+       STATS
+    ============================== */
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      background: var(--pink);
+
+      text-align: center;
+    }
+
+    .stat {
+      padding: 48px 20px;
+
+      border-right: 1px solid rgba(56,43,46,0.15);
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat strong {
+      display: block;
+
+      font-family: "Playfair Display", serif;
+
+      font-size: 38px;
+    }
+
+    .stat span {
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    /* ==============================
+       CONTACT
+    ============================== */
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 10%;
+
+      background: var(--cream);
+    }
+
+    .contact h2 {
+      font-family: "Playfair Display", serif;
+
+      font-size: clamp(48px, 5vw, 68px);
+
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .contact h2 em {
+      color: var(--pink-dark);
+    }
+
+    .contact-description {
+      color: var(--muted);
+
+      max-width: 500px;
+
+      margin: 25px 0 40px;
+    }
+
+    .contact-info {
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      padding: 17px 0;
+
+      border-bottom: 1px solid var(--border);
+
+      font-size: 12px;
+    }
+
+    .contact-row span {
+      color: var(--muted);
+    }
+
+    /* ==============================
+       BOOKING FORM
+    ============================== */
+
+    .booking {
+      background: white;
+
+      padding: 40px;
+
+      box-shadow:
+        0 20px 60px rgba(56,43,46,0.07);
+    }
+
+    .booking h3 {
+      font-family: "Playfair Display", serif;
+
+      font-size: 31px;
+      font-weight: 500;
+
+      margin-bottom: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+
+      font-size: 10px;
+      letter-spacing: 1px;
+
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+
+      border: none;
+      border-bottom: 1px solid var(--border);
+
+      background: transparent;
+
+      padding: 12px 0;
+
+      outline: none;
+
+      font: 13px "DM Sans";
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .booking button {
+      width: 100%;
+
+      border: none;
+
+      cursor: pointer;
+    }
+
+    .form-message {
+      color: var(--pink-dark);
+
+      font-size: 11px;
+
+      margin-top: 13px;
+    }
+
+    /* ==============================
+       INSTAGRAM
+    ============================== */
+
+    .instagram {
+      padding: 105px 8%;
+
+      background: white;
+
+      text-align: center;
+    }
+
+    .instagram h2 {
+      font-family: "Playfair Display", serif;
+
+      font-size: clamp(45px, 5vw, 62px);
+
+      font-weight: 500;
+    }
+
+    .instagram h2 em {
+      color: var(--pink-dark);
+    }
+
+    .instagram p:not(.eyebrow) {
+      color: var(--muted);
+
+      font-size: 13px;
+
+      max-width: 550px;
+
+      margin: 17px auto 27px;
+    }
+
+    .instagram-button {
+      display: inline-block;
+
+      background: var(--brown);
+      color: white;
+
+      padding: 14px 24px;
+
+      font-size: 11px;
+    }
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    footer {
+      background: var(--brown);
+
+      color: white;
+
+      padding: 40px 7%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 10px;
+    }
+
+    footer .logo-circle {
+      border-color: #dfbcc4;
+    }
+
+    footer .logo-text span {
+      color: #c4b6b9;
+    }
+
+    /* ==============================
+       MOBILE
+    ============================== */
+
+    @media (max-width: 900px) {
+
+      nav {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+
+      nav.open {
+        position: absolute;
+
+        top: 82px;
+        left: 0;
+        right: 0;
+
+        background: var(--cream);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 25px 8%;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        height: 500px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        min-height: 450px;
+      }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      header {
+        padding: 0 6%;
+      }
+
+      .hero-content {
+        padding: 75px 7%;
+      }
+
+      .hero h1 {
+        font-size: 54px;
+      }
+
+      .hero-image {
+        height: 400px;
+      }
+
+      .intro,
+      .section,
+      .instagram {
+        padding: 75px 7%;
+      }
+
+      .service-grid,
+      .gallery-grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .service {
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+
+        padding: 30px 0 !important;
+      }
+
+      .gallery-item {
+        height: 400px;
+      }
+
+      .about-image {
+        min-height: 400px;
+      }
+
+      .booking {
+        padding: 28px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- ==========================
+       TOP BAR
+  =========================== -->
+
+  <div class="announcement">
+    NOW ACCEPTING APPOINTMENTS • WEST WINDSOR, NJ
+  </div>
+
+
+  <!-- ==========================
+       NAVIGATION
+  =========================== -->
+
+  <header>
+
+    <a href="#home" class="logo">
+
+      <div class="logo-circle">
+        R
+      </div>
+
+      <div class="logo-text">
+        <strong>REHANA</strong>
+        <span>HAIR & BEAUTY</span>
+      </div>
+
+    </a>
+
+
+    <button
+      class="menu"
+      onclick="toggleMenu()"
+      aria-label="Open navigation"
+    >
+      ☰
+    </button>
+
+
+    <nav id="navigation">
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#gallery">
+        Gallery
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        href="#contact"
+        class="nav-button"
+      >
+        Book Now
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main id="home">
+
+
+    <!-- ==========================
+         HERO
+    =========================== -->
+
+    <section class="hero">
+
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          HAIR • BEAUTY • CONFIDENCE
+        </p>
+
+
+        <h1>
+          Beauty made
+          <em>personal.</em>
+        </h1>
+
+
+        <p class="hero-description">
+
+          Professional hair and beauty services created
+          around your style, your hair and the look
+          you want to achieve.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a
+            href="#contact"
+            class="button button-dark"
+          >
+            Book an appointment →
+          </a>
+
+
+          <a
+            href="#gallery"
+            class="button-link"
+          >
+            Explore our work
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- TEMPORARY STOCK IMAGE -->
+      <div class="hero-image"></div>
+
+    </section>
+
+
+    <!-- ==========================
+         INTRO
+    =========================== -->
+
+    <section class="intro">
+
+      <p class="eyebrow">
+        WELCOME TO REHANA
+      </p>
+
+
+      <h2>
+        Where great hair meets
+        <em>great confidence.</em>
+      </h2>
+
+
+      <p>
+
+        Rehana Hair & Beauty is a welcoming destination
+        for professional hair and beauty services in
+        the West Windsor area.
+
+      </p>
+
+    </section>
+
+
+    <!-- ==========================
+         SERVICES
+    =========================== -->
+
+    <section
+      class="section services"
+      id="services"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            WHAT WE OFFER
+          </p>
+
+          <h2>
+            Our services
+          </h2>
+
+        </div>
+
+
+        <p>
+
+          From a fresh haircut to a complete
+          transformation, our services are designed
+          around your goals.
+
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+
+        <article class="service">
+
+          <span class="service-number">
+            01
+          </span>
+
+          <h3>
+            Hair Styling
+          </h3>
+
+          <p>
+
+            Professional styling and personalized
+            looks for everyday life and special occasions.
+
+          </p>
+
+        </article>
+
+
+        <article class="service">
+
+          <span class="service-number">
+            02
+          </span>
+
+          <h3>
+            Keratin Treatments
+          </h3>
+
+          <p>
+
+            Professional treatments designed to
+            leave hair smoother and easier to manage.
+
+          </p>
+
+        </article>
+
+
+        <article class="service">
+
+          <span class="service-number">
+            03
+          </span>
+
+          <h3>
+            Body Waxing
+          </h3>
+
+          <p>
+
+            Professional waxing services performed
+            with care and attention to comfort.
+
+          </p>
+
+        </article>
+
+
+        <article class="service">
+
+          <span class="service-number">
+            04
+          </span>
+
+          <h3>
+            Beauty Services
+          </h3>
+
+          <p>
+
+            Personalized beauty services for
+            everyday confidence and special events.
+
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================
+         GALLERY
+    =========================== -->
+
+    <section
+      class="section gallery"
+      id="gallery"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            THE LOOKS
+          </p>
+
+          <h2>
+            Our work
+          </h2>
+
+        </div>
+
+
+        <a
+          href="https://instagram.com/rehanahairandbeauty"
+          target="_blank"
+          rel="noopener"
+          class="gallery-button"
+        >
+          View Instagram ↗
+        </a>
+
+      </div>
+
+
+      <div class="gallery-grid">
+
+
+        <!-- =================================
+             TEMPORARY STOCK PHOTO #1
+             REPLACE WITH REHANA PHOTO
+        ================================== -->
+
+        <div class="gallery-item">
+
+          <img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85"
+            alt="Temporary hair styling stock photo"
+          >
+
+          <span class="gallery-label">
+            TEMPORARY PHOTO
+          </span>
+
+        </div>
+
+
+        <!-- TEMPORARY STOCK PHOTO #2 -->
+
+        <div class="gallery-item">
+
+          <img
+            src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=85"
+            alt="Temporary salon stock photo"
+          >
+
+          <span class="gallery-label">
+            TEMPORARY PHOTO
+          </span>
+
+        </div>
+
+
+        <!-- TEMPORARY STOCK PHOTO #3 -->
+
+        <div class="gallery-item">
+
+          <img
+            src="https://images.unsplash.com/photo-1560869713-da86a9ec0321?auto=format&fit=crop&w=900&q=85"
+            alt="Temporary hair stock photo"
+          >
+
+          <span class="gallery-label">
+            TEMPORARY PHOTO
+          </span>
+
+        </div>
+
+
+        <!-- TEMPORARY STOCK PHOTO #4 -->
+
+        <div class="gallery-item">
+
+          <img
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=85"
+            alt="Temporary salon styling stock photo"
+          >
+
+          <span class="gallery-label">
+            TEMPORARY PHOTO
+          </span>
+
+        </div>
+
+
+        <!-- TEMPORARY STOCK PHOTO #5 -->
+
+        <div class="gallery-item">
+
+          <img
+            src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85"
+            alt="Temporary beauty stock photo"
+          >
+
+          <span class="gallery-label">
+            TEMPORARY PHOTO
+          </span>
+
+        </div>
+
+
+        <!-- TEMPORARY STOCK PHOTO #6 -->
+
+        <div class="gallery-item">
+
+          <img
+            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85"
+            alt="Temporary beauty stock photo"
+          >
+
+          <span class="gallery-label">
+            TEMPORARY PHOTO
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <p class="gallery-note">
+
+        Temporary stock photography — replace these
+        images with approved photos from Rehana Hair &
+        Beauty before publishing.
+
+      </p>
+
+    </section>
+
+
+    <!-- ==========================
+         ABOUT
+    =========================== -->
+
+    <section
+      class="section about"
+      id="about"
+    >
+
+
+      <!-- TEMPORARY STOCK IMAGE -->
+
+      <div class="about-image"></div>
+
+
+      <div class="about-content">
+
+        <p class="eyebrow">
+          THE REHANA EXPERIENCE
+        </p>
+
+
+        <h2>
+
+          Beauty that feels
+          <em>like you.</em>
+
+        </h2>
+
+
+        <p>
+
+          At Rehana Hair & Beauty, beauty is personal.
+          The goal is not simply to give you a service —
+          it is to understand what you want and create
+          something that works for you.
+
+        </p>
+
+
+        <p>
+
+          Whether you are looking for a new hairstyle,
+          professional treatment or beauty service,
+          every visit is designed around quality,
+          care and attention to detail.
+
+        </p>
+
+
+        <a
+          href="#contact"
+          class="button button-dark"
+        >
+          Book your visit →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================
+         STATS
+    =========================== -->
+
+    <section class="stats">
+
+
+      <div class="stat">
+
+        <strong>
+          ✦
+        </strong>
+
+        <span>
+          PERSONALIZED SERVICE
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <strong>
+          ♥
+        </strong>
+
+        <span>
+          CLIENT-FIRST CARE
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <strong>
+          R
+        </strong>
+
+        <span>
+          REHANA HAIR & BEAUTY
+        </span>
+
+      </div>
+
+
+    </section>
+
+
+    <!-- ==========================
+         CONTACT
+    =========================== -->
+
+    <section
+      class="section contact"
+      id="contact"
+    >
+
+
+      <div>
+
+        <p class="eyebrow">
+          READY WHEN YOU ARE
+        </p>
+
+
+        <h2>
+
+          Let's create your
+          <em>next look.</em>
+
+        </h2>
+
+
+        <p class="contact-description">
+
+          Reach out to Rehana Hair & Beauty for
+          appointments, availability and service
+          questions.
+
+        </p>
+
+
+        <div class="contact-info">
+
+
+          <a
+            class="contact-row"
+            href="tel:6092695587"
+          >
+
+            <span>
+              Phone
+            </span>
+
+            <strong>
+              (609) 269-5587
+            </strong>
+
+          </a>
+
+
+          <a
+            class="contact-row"
+            href="https://instagram.com/rehanahairandbeauty"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <span>
+              Instagram
+            </span>
+
+            <strong>
+              @rehanahairandbeauty ↗
+            </strong>
+
+          </a>
+
+
+          <div class="contact-row">
+
+            <span>
+              Hours
+            </span>
+
+            <strong>
+              Tue–Sat 10 AM–7 PM
+              <br>
+              Sun 10 AM–6 PM
+            </strong>
+
+          </div>
+
+
+          <div class="contact-row">
+
+            <span>
+              Location
+            </span>
+
+            <strong>
+              Princeton Junction, NJ
+            </strong>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- BOOKING FORM -->
+
+      <div class="booking">
+
+        <h3>
+          Send an enquiry
+        </h3>
+
+
+        <form id="bookingForm">
+
+
+          <div class="form-group">
+
+            <label>
+              YOUR NAME
+            </label>
+
+            <input
+              type="text"
+              required
+              placeholder="Your name"
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>
+              SERVICE
+            </label>
+
+            <select required>
+
+              <option value="">
+                Choose a service
+              </option>
+
+              <option>
+                Hair Styling
+              </option>
+
+              <option>
+                Haircut
+              </option>
+
+              <option>
+                Keratin Treatment
+              </option>
+
+              <option>
+                Body Waxing
+              </option>
+
+              <option>
+                Beauty Service
+              </option>
+
+              <option>
+                Not sure yet
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>
+              PHONE / EMAIL
+            </label>
+
+            <input
+              type="text"
+              required
+              placeholder="How should we contact you?"
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>
+              MESSAGE
+            </label>
+
+            <textarea
+              rows="4"
+              required
+              placeholder="Tell us what you're looking for..."
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="button button-dark"
+          >
+            Send enquiry →
+          </button>
+
+
+          <p
+            class="form-message"
+            id="formMessage"
+          ></p>
+
+
+        </form>
+
+      </div>
+
+
+    </section>
+
+
+    <!-- ==========================
+         INSTAGRAM
+    =========================== -->
+
+    <section class="instagram">
+
+      <p class="eyebrow">
+        FOLLOW ALONG
+      </p>
+
+
+      <h2>
+        See more of our
+        <em>work.</em>
+      </h2>
+
+
+      <p>
+
+        Follow Rehana Hair & Beauty on Instagram
+        for the latest styles, transformations
+        and updates.
+
+      </p>
+
+
+      <a
+        class="instagram-button"
+        href="https://instagram.com/rehanahairandbeauty"
+        target="_blank"
+        rel="noopener"
+      >
+        @rehanahairandbeauty ↗
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ==========================
+       FOOTER
+  =========================== -->
+
+  <footer>
+
+
+    <div class="logo">
+
+      <div class="logo-circle">
+        R
+      </div>
+
+      <div class="logo-text">
+
+        <strong>
+          REHANA
+        </strong>
+
+        <span>
+          HAIR & BEAUTY
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <p>
+      © <span id="year"></span> Rehana Hair & Beauty
+    </p>
+
+
+    <a
+      href="https://instagram.com/rehanahairandbeauty"
+      target="_blank"
+      rel="noopener"
+    >
+      Instagram ↗
+    </a>
+
+
+  </footer>
+
+
+  <script>
+
+    /* ==========================
+       MOBILE MENU
+    =========================== */
+
+    function toggleMenu() {
+
+      const navigation =
+        document.getElementById("navigation");
+
+      navigation.classList.toggle("open");
+
+    }
+
+
+    /* ==========================
+       CLOSE MOBILE MENU
+    =========================== */
+
+    document
+      .querySelectorAll("#navigation a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          document
+            .getElementById("navigation")
+            .classList.remove("open");
+
+        });
+
+      });
+
+
+    /* ==========================
+       CURRENT YEAR
+    =========================== */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    /* ==========================
+       DEMO BOOKING FORM
+    =========================== */
+
+    document
+      .getElementById("bookingForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        document
+          .getElementById("formMessage")
+          .textContent =
+          "Thank you! Your enquiry has been received.";
+
+        this.reset();
+
+      });
+
+  </script>
+
+</body>
+</html>
+```
